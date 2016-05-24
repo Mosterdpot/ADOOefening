@@ -1,0 +1,33 @@
+﻿<Window x:Class="Opgave01.LeverancierToevoegen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="LeverancierToevoegen" Height="300" Width="400" MinHeight="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+            
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Name="labelNaam" Content="Naam" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Margin="10 0 10 0"></Label>
+        <TextBox Name="textNaam" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" Height="24" Margin="10 0 10 0"></TextBox>
+        <Label Name="labelAdres" Content="Adres" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Margin="10 0 10 0"></Label>
+        <TextBox Name="textAdres" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" Margin="10 0 10 0"></TextBox>
+        <Label Name="labelPostcode" Content="Postcode" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Margin="10 0 10 0"></Label>
+        <TextBox Name="textPostcode" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" Margin="10 0 10 0"></TextBox>
+        <Label Name="labelPlaats" Content="Plaats" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Margin="10 0 10 0"></Label>
+        <TextBox Name="textPlaats" Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" Margin="10 0 10 0"></TextBox>
+        <Button Name="buttonToevoegen" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" Content="Toevoegen" Click="Button_Toevoegen" Margin="10 0 10 0"></Button>
+        <Button Name="buttonKorting" Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" Content="Eindejaarskorting" Click="Button_Korting" Margin="10 0 10 0"></Button>
+        <Label Name="labelStatus" Content="" Grid.ColumnSpan="2" Grid.RowSpan="3" Grid.Row="5" Grid.Column="0" VerticalAlignment="Top" Margin="10 0 10 0"></Label>
+
+    </Grid>
+</Window>
