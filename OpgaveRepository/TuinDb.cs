@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace OpgaveRepository
 {
-    public class TuinDb
+    public  class TuinDb
     {
         private static ConnectionStringSettings settings = ConfigurationManager.ConnectionStrings["Tuin"];
         private static DbProviderFactory factory = DbProviderFactories.GetFactory(settings.ProviderName);
@@ -24,6 +24,8 @@ namespace OpgaveRepository
             conTuin.ConnectionString = settings.ConnectionString;
             return conTuin;
         }
+
+
 
 
     }
