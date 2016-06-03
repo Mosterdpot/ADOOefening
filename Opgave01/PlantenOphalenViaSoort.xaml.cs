@@ -41,7 +41,9 @@ namespace Opgave01
                 }
             }
             catch (Exception ex)
-            { MessageBox.Show(ex.Message); }
+            { 
+                MessageBox.Show(ex.Message); 
+            }
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
