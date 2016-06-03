@@ -20,8 +20,9 @@
         </Grid.ColumnDefinitions>
         
         <Label Name="labelSoort" Content="Soort" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Margin="10 0 10 0"></Label>
-        <ComboBox Name="comboSoort" Grid.ColumnSpan="2" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" Height="24" Margin="10 0 10 0" SelectionChanged="comboSoort_SelectionChanged"></ComboBox>
-        <ListBox Name="listBoxPlanten" Grid.ColumnSpan="3" Grid.Row="1" Grid.Column="0" Margin="10 0 10 0"></ListBox>
+        <ComboBox  Name="comboSoort" Grid.ColumnSpan="2" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" Height="24" Margin="10 0 10 0" SelectionChanged="comboSoort_SelectionChanged"></ComboBox>
+        <!--<ComboBox  DisplayMemberPath="{Binding Path=SoortNaam}" SelectedValuePath="{Binding Path=SoortNummer}" Name="comboSoort" Grid.ColumnSpan="2" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" Height="24" Margin="10 0 10 0" SelectionChanged="comboSoort_SelectionChanged"></ComboBox>-->
+        <ListBox Name="listBoxPlanten" Grid.ColumnSpan="3" Grid.RowSpan="5" Grid.Row="1" Grid.Column="0" Margin="10 0 10 0"></ListBox>
 
     </Grid>
 </Window>

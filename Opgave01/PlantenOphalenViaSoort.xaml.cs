@@ -29,7 +29,19 @@ namespace Opgave01
 
         private void comboSoort_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            //planten ophalen
+            try
+            {
+                listBoxPlanten.Items.Clear();
+                int soortNr = Convert.ToInt32(comboSoort.SelectedValue);
+                var manager = new TuinManager();
+                var allePlanten = manager.GetPlanten(soortNr);
+                foreach (var eenPlant in allePlanten)
+                {
+                    listBoxPlanten.Items.Add(eenPlant); 
+                }
+            }
+            catch (Exception ex)
+            { MessageBox.Show(ex.Message); }
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -37,7 +49,7 @@ namespace Opgave01
             try
             {
                 var manager = new TuinManager();
-                comboSoort.DisplayMemberPath = "SoorNaam";
+                comboSoort.DisplayMemberPath = "SoortNaam";
                 comboSoort.SelectedValuePath = "SoortNummer";
                 comboSoort.ItemsSource = manager.GetSoorten();
 
